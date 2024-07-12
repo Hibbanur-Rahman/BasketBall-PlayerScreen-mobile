@@ -10,7 +10,7 @@ import {
   ImageBackground
 } from 'react-native';
 
-import PlayerCardScreen from './src/screens/PlayerCardScreen';
+import PlayerCardScreen from './src/screens/PlayerCardScreen2';
 
 function App(): React.JSX.Element {
   return (
