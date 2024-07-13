@@ -10,7 +10,7 @@ import {
   ImageBackground
 } from 'react-native';
 
-import PlayerCardScreen from './src/screens/PlayerCardScreen2';
+import PlayerCardScreen from './src/screens/PlayerCardScreen3';
 
 function App(): React.JSX.Element {
   return (
@@ -21,7 +21,7 @@ function App(): React.JSX.Element {
     resizeMode="cover"> */}
 
       <ScrollView showsVerticalScrollIndicator={false}>
-        <View style={{display:'flex',alignItems:'center',justifyContent:'center',}}>
+        <View style={{display:'flex',alignItems:'center',justifyContent:'center',padding:10}}>
           <PlayerCardScreen />
         </View>
       </ScrollView>
