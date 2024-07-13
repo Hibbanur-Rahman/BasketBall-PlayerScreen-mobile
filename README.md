@@ -1,11 +1,12 @@
 # Basketball player card screens
-there are some screen shots of these projects
 
-![alt text](https://i.ibb.co/rwBgrJD/Screenshot-2024-07-13-202709.png)
-![alt text](https://i.ibb.co/pvCGw9C/Screenshot-2024-07-13-205707.png)
-![alt text](https://i.ibb.co/X2DCs4n/Screenshot-2024-07-13-202731.png)
+There are some screenshots of these projects:
 
-
+<div style="display: flex; justify-content: space-between;">
+  <img src="https://i.ibb.co/rwBgrJD/Screenshot-2024-07-13-202709.png" alt="Player Card Screenshot 1" width="300" height="600">
+  <img src="https://i.ibb.co/pvCGw9C/Screenshot-2024-07-13-205707.png" alt="Player Card Screenshot 2" width="300" height="600">
+  <img src="https://i.ibb.co/X2DCs4n/Screenshot-2024-07-13-202731.png" alt="Player Card Screenshot 3" width="300" height="600">
+</div>
 # React Native Project
 
 This is a [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
