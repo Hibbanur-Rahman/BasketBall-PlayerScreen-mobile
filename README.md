@@ -66,6 +66,13 @@ src
 |     |
 |     |--fonts
 |     |--images
+|----screens
+|     |---PlayerCardScreen.tsx
+|     |---PlayerCardScree2.tsx
+|     |---PlayerCardScreen3.tsx
+|----componetns
+|     |---LeftArrow.tsx
+|
 app.tsx
 ```
 
