@@ -6,9 +6,18 @@ import {
   Image,
   ImageBackground,
 } from 'react-native';
-import playerImg1 from '../assets/images/download.jpg';
-import profileImg from '../assets/images/profile-img.png';
-const PlayerCardScreen = () => {
+interface PlayerCardScreenProps {
+  name: string;
+  image: any;
+  position: string;
+  stats: {
+    pointsPerGame: number;
+    assistsPerGame: number;
+    reboundsPerGame: number;
+  };
+}
+
+const PlayerCardScreen: React.FC<PlayerCardScreenProps> = ({ name, image, position, stats }) => {
   return (
     <View style={[styles.container, {overflow:'hidden'}]}>
       <ImageBackground
@@ -24,13 +33,13 @@ const PlayerCardScreen = () => {
             overflow: 'hidden',
           }}>
           <Image
-            source={playerImg1}
+            source={image}
             style={{height: 100, width: 100, borderRadius: 50}}
           />
         </View>
         <View style={styles.playerInfoContainer}>
           <Text style={[styles.headText, {marginTop: 20, textAlign: 'center'}]}>
-            Luka Doncic | <Text style={{color: '#d83947'}}>#77</Text>
+            {name} | <Text style={{color: '#d83947'}}>#77</Text>
           </Text>
           <View
             style={{
@@ -85,7 +94,7 @@ const PlayerCardScreen = () => {
               <Text style={[styles.playerInfoText, {marginTop: 0}]}>
                 Dallas Mavericks
               </Text>
-              <Text style={[styles.playerInfoText]}>Forward-Guard</Text>
+              <Text style={[styles.playerInfoText]}>{position}</Text>
               <Text style={[styles.playerInfoText]}>
                 25 years [February 28, 1999]
               </Text>
@@ -113,19 +122,19 @@ const PlayerCardScreen = () => {
             }}>
             <View style={[styles.statsItems, {}]}>
               <View style={[styles.circle, {}]}>
-                <Text style={[styles.circleText, {}]}>33.9</Text>
+                <Text style={[styles.circleText, {}]}>{stats.pointsPerGame}</Text>
               </View>
               <Text style={styles.statsText}>Points Per Game</Text>
             </View>
             <View style={[styles.statsItems, {}]}>
               <View style={[styles.circle, {}]}>
-                <Text style={[styles.circleText, {}]}>9.2</Text>
+                <Text style={[styles.circleText, {}]}>{stats.reboundsPerGame}</Text>
               </View>
               <Text style={styles.statsText}>Rebounds Per Game</Text>
             </View>
             <View style={[styles.statsItems, {}]}>
               <View style={[styles.circle, {}]}>
-                <Text style={[styles.circleText, {}]}>9.8</Text>
+                <Text style={[styles.circleText, {}]}>{stats.assistsPerGame}</Text>
               </View>
               <Text style={styles.statsText}>Assists Per Game</Text>
             </View>
