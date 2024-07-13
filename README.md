@@ -1,3 +1,9 @@
+# Basketball player card screens
+there are some screen shots of these projects
+
+![alt text](https://i.ibb.co/rwBgrJD/Screenshot-2024-07-13-202709.png)
+![alt text](https://i.ibb.co/pvCGw9C/Screenshot-2024-07-13-205707.png)
+![alt text](https://i.ibb.co/X2DCs4n/Screenshot-2024-07-13-202731.png)
 
 
 # React Native Project
