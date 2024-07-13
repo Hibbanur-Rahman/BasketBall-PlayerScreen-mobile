@@ -16,6 +16,9 @@ To start **Metro**, the JavaScript _bundler_ that ships _with_ React Native, run
 # using npm
 npm start
 
+#OR using this for android
+npx react-native run-android
+
 # OR using Yarn
 yarn start
 ```
